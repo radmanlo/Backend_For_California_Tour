@@ -23,7 +23,7 @@ public class TourPackageService {
      * @return new or existing tour package
      */
     public TourPackage createTourPackage(String code, String name) {
-        return tourPackageRepository.findById(code).orElse(new TourPackage(code, name));
+        return tourPackageRepository.findById(code).orElse(tourPackageRepository.save(new TourPackage(code, name)));
     }
 
     /**

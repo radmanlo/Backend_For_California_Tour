@@ -8,7 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-@AllArgsConstructor(access = AccessLevel.PROTECTED)
+@AllArgsConstructor()
 @NoArgsConstructor
 @ToString
 @Getter
